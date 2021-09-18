@@ -1,11 +1,16 @@
 *{
     padding:0;
     margin:0;
-    font-family:'Quicksand', sans-serif;
-    color:rgb(27, 26, 24);
+    font-family:'Sora', sans-serif;
+    color:rgb(0, 0, 0);
+}
+body{
+    background:#F9F3DF;
+    color: white
 }
 header{
     height: 70px;
+    border:1px solid;
 }
 header h1{
     display: inline-block;
@@ -17,7 +22,7 @@ header h1 a{
     transition: 0.3s;
 }
 header h1 a:hover{
-    color: #9E5DE1;
+    color: #D7E9F7;
 }
 header ul{
     float: right;
@@ -30,14 +35,14 @@ header ul li a{
     transition: 0.3s;
 }
 header ul li a:hover{
-    color:#9E5DE1;
+    color:#D7E9F7;
 }
 a{
     text-decoration: none;
 }
 .container{
     width:90%;
-    margin: 0 auto;
+    margin: 0 auto; 
 }
 .container::after{
     content:'';
@@ -74,13 +79,13 @@ a{
     transition-property: background;
 }
 .sidebar ul li:hover{
-    background-color: #9E5DE1;
+    background-color: #F9F3DF;
 }
 #check:checked ~ .sidebar{
     left: 0;
 }
 .banner{
-    background-color: #B3B6B7;
+    background-color: #FDFCE5;
     padding:100px;
 }
 section{
@@ -95,7 +100,7 @@ section{
 .banner h2,
 .banner p, 
 .banner span{
-    color:#fff;
+    color: black;
 }
 .banner h2{
     margin-bottom:10px;
@@ -112,26 +117,7 @@ section h3{
     margin:20px;
     position:relative;
 }
-section h3::before{
-    content:'';
-    display:block;
-    position:absolute;
-    bottom: 0;
-    width:120px;
-    height:1px;
-    background-color: #ddd;
-    left: calc(50% - 60px);
-}
-section h3::after{
-    content:'';
-    display:block;
-    position:absolute;
-    bottom: -1px;
-    width:40px;
-    height:1px;
-    background-color: rgb(204, 47, 47);
-    left: calc(50% - 20px);
-}
+
 #about p{
     text-align:justify;
     text-indent:30px;
@@ -145,12 +131,12 @@ section h3::after{
 #skills .bar{
     height:30px;
     background-color:#fff;
-    border:1px solid;
-    margin:5px 0 20px 0px;
+    border:1px;
+    margin:5px 0px 20px 0px;
 }
 .bar .nilai{
     height:30px;
-    background-color:#F81124;
+    background-color:#86340A;
     display:inline-block;
     color:#fff;
     text-align:center;
@@ -180,18 +166,20 @@ section h3::after{
 }
 .col-4 a:hover img{
     transform: scale(1.1);
+    transition: 0.5s;
 }
 .col-3{
     width: 33.33%;
     box-sizing: border-box;
-    float:left;
+    float: right;
     text-align: center;
     padding:50px 10px;
+    cursor: pointer;
 }
 .col-3 h4{
     padding-bottom:10px;
     border-bottom:1px solid #ddd;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 footer{
